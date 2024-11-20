@@ -6,17 +6,36 @@
     align-items: center;
 }
 
-.nav-logo {
+/* .nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
 
 .nav-logo p {
     color: #171717;
     font-size: 38px;
     font-weight: 600;
 }
+
+.nav-logo {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    height: 80px; /* Adjust the height to fit your navbar */
+  }
+  
+  .logo-img {
+    width: 90px; /* Adjust to your preferred size */
+    height: 90px; /* Keep aspect ratio with width */
+    margin-right: 8px; /* Space between logo and text */
+  }
+  
+  .logo-text {
+    font-size: 18px; /* Adjust to fit the navbar */
+    font-weight: bold; /* Optional: to emphasize the text */
+    margin: 0; /* Remove any default margin */
+  }
+  
 
 .nav-menu {
     display: flex;

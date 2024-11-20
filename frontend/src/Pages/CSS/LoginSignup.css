@@ -4,9 +4,18 @@
     background: #fce3fe;
     padding-top: 100px;
 }
+
+.message {
+    font-size: 16px;
+    color: #ff4141;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
 .loginsignup-container{
-    width: 580px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     background: white;
     margin: auto;
     padding: 40px 60px;
@@ -30,7 +39,7 @@
     font-size: 18px;
 }
 .loginsignup-container button{
-    width: 580px;
+    width: 530px;
     height: 72px;
     color: white;
     background: #ff4141;
