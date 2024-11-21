@@ -19,7 +19,7 @@ const LoginSignup = () => {
   const login = async () => {
     console.log("Login Function Executed", formData);
     let responseData;
-    await fetch('https://shop-smart-fxg5.onrender.com/login', {
+    await fetch('https://shop-smart-3.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
@@ -41,7 +41,7 @@ const LoginSignup = () => {
   const signup = async () => {
     console.log("Signup Function Executed", formData);
     let responseData;
-    await fetch('https://shop-smart-fxg5.onrender.com/signup', {
+    await fetch('https://shop-smart-3.onrender.com/signup', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',

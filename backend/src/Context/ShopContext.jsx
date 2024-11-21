@@ -24,12 +24,12 @@ const ShopContextProvider = (props) => {
   const [selectedSizes, setSelectedSizes] = useState(getDefaultSizes()); // State for selected sizes
 
   useEffect(() => {
-    fetch("https://shop-smart-fxg5.onrender.com/allproducts")
+    fetch("https://shop-smart-3.onrender.com/allproducts")
       .then((response) => response.json())
       .then((data) => setAll_Product(data));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shop-smart-fxg5.onrender.com/getcart", {
+      fetch("https://shop-smart-3.onrender.com/getcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -51,7 +51,7 @@ const ShopContextProvider = (props) => {
     }
 
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shop-smart-fxg5.onrender.com/addtocart", {
+      fetch("https://shop-smart-3.onrender.com/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -69,7 +69,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shop-smart-fxg5.onrender.com/removefromcart", {
+      fetch("https://shop-smart-3.onrender.com/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",

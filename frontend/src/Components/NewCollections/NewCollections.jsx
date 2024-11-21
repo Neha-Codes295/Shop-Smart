@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection] = useState([]);
 
   useEffect(()=>{
-    fetch('https://shop-smart-fxg5.onrender.com/newcollections')
+    fetch('https://shop-smart-3.onrender.com/newcollections')
     .then((response)=>response.json())
     .then((data)=>setNew_collection(data));
   },[])
