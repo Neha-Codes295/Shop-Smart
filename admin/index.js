@@ -35,9 +35,10 @@ const upload = multer({storage:storage})
 // Creating upload endpoint for images
 app.use('/images',express.static('upload/images'))
 app.post("/upload", upload.single('product'), (req, res) => {
+    console.log(req.file);
     res.json({
         success: 1,
-        image_url: `http://localhost:${port}/images/${req.file.filename}`
+        image_url: `https://shop-smart-fxg5.onrender.com/images/${req.file.filename}`
     })
 })
 
